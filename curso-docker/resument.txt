@@ -1,0 +1,40 @@
+Algunos comandos interesantes
+
+docker ps -a 
+    -a all
+docker image ls (MUY IMPORTANTE)
+dokcer inspect <container>
+    
+
+docker run <docker-name> ejemplo: ubuntu
+
+== usando un volumen -v (BIND MOUNT)==
+    docker run -d --name db -v E:\platzi\curso-docker\docker-data\mongodata:/data/db mongo
+        -d detached 
+        --name <db:nombre del container> 
+        -v <path>:/data/db (Volumen, LocalPath:VolumenPath)
+            /data/db es el lugar donde se guardan la DB de MONGO
+
+== usando un volumen --mount ==
+    docker run -d --name db --mount src=dbdata,dst=/data/db
+        --mount src=SourceVolume,dst=DestinationPath
+
+== para usar MONGO db, docker ==
+    docker exec -it db bash 
+        exec (llama un running docker)
+        -it (interactive) 
+        db (name of docker)
+        bash (command to run)
+
+== prune (limpia)== 
+    docker container prune 
+    docker volume prune 
+    docker system prune 
+        -f FORCE
+
+== cp copiar from & to container ==
+    docker cp <source_path> <destination_path> 
+    from container:
+        docker cp container:<source_path> <destination_path
+    to container: 
+        docker cp <source_path> container:<destination_path    

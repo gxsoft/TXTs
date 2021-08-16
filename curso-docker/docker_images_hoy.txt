@@ -1,0 +1,12 @@
+REPOSITORY                                                      TAG                                        IMAGE ID       CREATED        SIZE
+vsc-volume-bootstrap                                            latest                                     5d93901ec90d   6 days ago     179MB
+mcr.microsoft.com/vscode/devcontainers/repos/microsoft/vscode   branch-main                                366a9a2d7804   8 days ago     5GB
+mongo                                                           latest                                     269b735e72cb   9 days ago     682MB
+gxsoft/docker101tutorial                                        latest                                     6127adc8b019   2 weeks ago    28.2MB
+docker101tutorial                                               latest                                     6127adc8b019   2 weeks ago    28.2MB
+ubuntu                                                          latest                                     1318b700e415   2 weeks ago    72.8MB
+nginx                                                           latest                                     08b152afcfae   3 weeks ago    133MB
+docker/dev-environments-go                                      stable-1                                   8862cf2c1c1b   3 weeks ago    1.36GB
+alpine/git                                                      latest                                     b8f176fa3f0d   2 months ago   25.1MB
+docker/desktop-git-helper                                       788b46348871cc072d5046bdbb4f87928eb7e6e9   342a72da9731   2 months ago   43.6MB
+hello-world                                                     latest                                     d1165f221234   5 months ago   13.3kB
